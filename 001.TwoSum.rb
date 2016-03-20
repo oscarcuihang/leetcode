@@ -12,10 +12,10 @@
 # @param {Integer} target
 # @return {Integer[]}
 def two_sum(nums, target)
-    map = {}
+    hash = {}
     nums.each_with_index do |num, index|
-        i = map[target - num]
+        i = hash[target - num]
         return [i, index] if i
-        map[num] = index
+        hash[num] = index
     end
  end
