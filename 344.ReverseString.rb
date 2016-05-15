@@ -8,5 +8,5 @@
 # @param {String} s
 # @return {String}
 def reverse_string(s)
-    
+    string.reverse
 end
