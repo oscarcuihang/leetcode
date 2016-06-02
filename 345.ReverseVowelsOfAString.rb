@@ -11,5 +11,11 @@
 # @param {String} s
 # @return {String}
 def reverse_vowels(s)
-    
+    n = s.size
+    result = []
+    while n < 0
+    	result << s[n-1]
+    	n = n - 1
+    end
+    result
 end
