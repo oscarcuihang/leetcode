@@ -10,6 +10,9 @@
 
 # @param {String} s
 # @return {String}
+
+vowels = 'aeiou'
+
 def reverse_vowels(s)
     n = s.size
     result = []
