@@ -15,6 +15,9 @@
 
 # For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
+
+
+#S1
 # @param {Integer} x
 # @return {Integer}
 def reverse(x)
@@ -22,4 +25,19 @@ def reverse(x)
     res = x.to_i.reverse.to_i
     return 0 if res > 2 ** 32 - 1
     res
+end
+
+
+#S2
+# @param {Integer} x
+# @return {Integer}
+def reverse(x)
+    max = 2**31-1
+    return -reverse(-x) if x < 0
+    sum = 0
+    while x > 0
+        sum = sum*10 + x%10
+        x = x / 10
+    end
+    sum > max ? 0 : sum
 end
