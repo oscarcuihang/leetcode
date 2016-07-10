@@ -20,4 +20,4 @@ def title_to_number(s)
         res = res * 26 + c.upcase.ord - 'A'.ord + 1
     end
     res
-end
+end 
