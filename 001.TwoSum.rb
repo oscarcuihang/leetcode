@@ -21,3 +21,4 @@ def two_sum(nums, target)
         hash[num] = index
     end
  end
+ 
